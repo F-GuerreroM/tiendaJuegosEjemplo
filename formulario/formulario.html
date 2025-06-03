@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/formulario.css" />
+</head>
+<body>
+  <header>
+    <h1>Registro de Usuario</h1>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="logica.html">Rol</a>
+      <a href="clasicos.html">Clásicos</a>
+      <a href="educativos.html">Infantil</a>
+    </nav>
+  </header>
+
+  <main class="formulario-container">
+    <form id="registroForm" class="formulario">
+      <div class="campo">
+        <label for="nombreCompleto">Nombre completo:</label>
+        <input type="text" id="nombreCompleto" name="nombreCompleto" required />
+      </div>
+
+      <div class="campo">
+        <label for="usuario">Nombre de usuario:</label>
+        <input type="text" id="usuario" name="usuario" required />
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required />
+      </div>
+
+      <div class="campo">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required />
+      </div>
+
+      <div class="campo">
+        <label for="confirmarContrasena">Repetir contraseña:</label>
+        <input type="password" id="confirmarContrasena" name="confirmarContrasena" required />
+      </div>
+
+      <div class="campo">
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required />
+      </div>
+
+      <div class="campo">
+        <label for="direccion">Dirección de despacho (opcional):</label>
+        <input type="text" id="direccion" name="direccion" />
+      </div>
+
+      <div class="botones">
+        <button type="submit">Registrarse</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tocomple</p>
+  </footer>
+
+  <script src="../js/formulario.js"></script>
+</body>
+</html>
